@@ -44,12 +44,26 @@ html {
 }
 
 .logo img {
-    position: absolute;
-    top: 22%;
-    left: 25%;
+    position: relative;
     border: 1px solid;
+    left: 25%;
     border-radius: 50%;
     width: 180px;
     height: 180px;
     z-index: 2;
+}
+
+.rightcontainer {
+    position: absolute;
+    top: 22%;
+    width: 100%;
+}
+
+.rightheader {
+    color: #3D4B5A;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px;
 }
