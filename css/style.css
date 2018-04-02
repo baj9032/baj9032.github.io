@@ -1,0 +1,33 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    position: relative;
+    border: 1px solid;
+    width: 90%;
+    height: 50%;
+    margin: auto;
+}
+
+.skew1 {
+    position: absolute;
+    border-style: solid;
+    border-color: #E7C0B7 #E7C0B7 transparent #E7C0B7;
+    border-width: 0px 1440px 250px 0px;
+
+}
+
+
+.skew2 {
+    position: absolute;
+    border-style: solid;
+    border-top-color: #787878;
+    border-width: 250px 500px 0px 0px;
+    border-left-color: #787878;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
