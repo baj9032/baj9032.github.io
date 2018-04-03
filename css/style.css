@@ -12,15 +12,17 @@ html {
     width: 90%;
     height: 100%;
     margin: auto;
+    margin-top: 1%;
+    overflow: hidden;
     box-shadow: 0px 0.5px 0.5px 0.5px #DFDFDF;
+    margin-bottom: 1%;
 }
 
 .skew {
     position: absolute;
     width: 100%;
-    height: 30%;
-    opacity: 0.8;
-    z-index: 1;
+    height: 40%;
+    overflow: visible;
     
 }
 
@@ -31,48 +33,62 @@ html {
     width: 100%;
     background-color: #E7C0B7;
     transform-origin: top right;
-    transform: skew(0,9deg);
+    transform: skew(0,13deg);
+    z-index: 1;
+    opacity: 0.8;
 }
 
 .skew:before {
     content: '';
     position: absolute;
-    height: 100%;
+    height: 125%;
     width: 40%;
     background-color: #8C919B;
     transform-origin: top left;
-    transform: skew(0,-23deg);
+    transform: skew(0,-35deg);
+    z-index: 1;
+    opacity: 0.8;
 
 }
 
-.right {
+.left {
     background: #DFDFDF;
     position: absolute;
     height: 100%;
     width: 30%;
+    left: 0;
 }
 
 .logo img {
     position: relative;
     border: 1px solid;
-    left: 25%;
+    left: 22%;
     border-radius: 50%;
     width: 180px;
     height: 180px;
     z-index: 2;
+    border-color: #dfdfdf;
 }
 
-.rightcontainer {
+.leftcontainer {
     position: absolute;
-    top: 22%;
+    top: 19%;
     width: 100%;
 }
 
-.rightheader {
+.leftheader {
     color: #3D4B5A;
     letter-spacing: 5px;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     margin: 50px;
+}
+
+.right{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    right: 0;
+    
 }
