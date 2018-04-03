@@ -2,18 +2,20 @@ body,
 html {
     margin: 0;
     padding: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 .main {
     position: relative;
+    overflow: hidden;
     border: 0.5px solid #DFDFDF;
     width: 90%;
     height: 100%;
     margin: auto;
     margin-top: 1%;
-    overflow: hidden;
     box-shadow: 0px 0.5px 0.5px 0.5px #DFDFDF;
     margin-bottom: 1%;
 }
@@ -23,7 +25,6 @@ html {
     width: 100%;
     height: 40%;
     overflow: visible;
-    
 }
 
 .skew:after {
@@ -33,7 +34,7 @@ html {
     width: 100%;
     background-color: #E7C0B7;
     transform-origin: top right;
-    transform: skew(0,13deg);
+    transform: skew(0, 13deg);
     z-index: 1;
     opacity: 0.8;
 }
@@ -45,10 +46,9 @@ html {
     width: 40%;
     background-color: #8C919B;
     transform-origin: top left;
-    transform: skew(0,-35deg);
+    transform: skew(0, -35deg);
     z-index: 1;
     opacity: 0.8;
-
 }
 
 .left {
@@ -80,15 +80,14 @@ html {
     color: #3D4B5A;
     letter-spacing: 5px;
     text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    margin: 50px;
+    font-weight: 900;
+    text-align: left;
+    margin: 30px;
 }
 
-.right{
+.right {
     position: absolute;
     width: 70%;
     height: 100%;
     right: 0;
-    
 }
