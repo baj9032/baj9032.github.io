@@ -2,18 +2,14 @@ body,
 html {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: visible;
 }
-
 
 .main {
     position: relative;
-    overflow: hidden;
     border: 0.5px solid #DFDFDF;
     width: 90%;
-    height: 100%;
     margin: auto;
     margin-top: 1%;
     box-shadow: 0px 0.5px 0.5px 0.5px #DFDFDF;
@@ -23,14 +19,14 @@ html {
 .skew {
     position: absolute;
     width: 100%;
-    height: 40%;
-    overflow: visible;
+    height: 500px;
+    overflow: hidden;
 }
 
 .skew:after {
     content: '';
     position: absolute;
-    height: 100%;
+    height: 250px;
     width: 100%;
     background-color: #E7C0B7;
     transform-origin: top right;
@@ -42,7 +38,7 @@ html {
 .skew:before {
     content: '';
     position: absolute;
-    height: 125%;
+    height: 300px;
     width: 40%;
     background-color: #8C919B;
     transform-origin: top left;
@@ -54,9 +50,10 @@ html {
 .left {
     background: #DFDFDF;
     position: absolute;
-    height: 100%;
-    width: 30%;
     left: 0;
+    top: 0;
+    width: 30%;
+    height: inherit;
 }
 
 .logo img {
@@ -70,24 +67,84 @@ html {
     border-color: #dfdfdf;
 }
 
-.leftcontainer {
+.leftcontainer,
+.rightcontainer {
     position: absolute;
-    top: 19%;
+    top: 100px;
     width: 100%;
 }
 
 .leftheader {
-    color: #3D4B5A;
+    color: #253546;
     letter-spacing: 5px;
     text-transform: uppercase;
     font-weight: 900;
     text-align: left;
+    font-size: 17px;
     margin: 30px;
 }
 
 .right {
     position: absolute;
     width: 70%;
-    height: 100%;
     right: 0;
+    height: inherit;
+}
+
+.container {
+    height: 1500px;
+}
+
+.leftcontent ul li,
+.leftcontent ul li a {
+    color: #293949;
+    list-style: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.leftcontent ul li a {
+    text-decoration: none;
+}
+
+.namesection,
+.rightheader,
+.rightcontent {
+    margin: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.namesection h1,
+.namesection h3 {
+    color: #D0826E;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.namesection h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.namesection h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.rightheader {
+    color: #D0826E;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: left;
+}
+
+.divider {
+    height: 5px;
+    background-color: #dfdfdf;
+    margin: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
