@@ -47,6 +47,10 @@ html {
     opacity: 0.8;
 }
 
+.container {
+    height: 3200px;
+}
+
 .left {
     background: #DFDFDF;
     position: absolute;
@@ -61,10 +65,11 @@ html {
     border: 1px solid;
     left: 22%;
     border-radius: 50%;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     z-index: 2;
     border-color: #dfdfdf;
+    top: 10px;
 }
 
 .leftcontainer,
@@ -76,23 +81,12 @@ html {
 
 .leftheader {
     color: #253546;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 900;
     text-align: left;
     font-size: 17px;
     margin: 30px;
-}
-
-.right {
-    position: absolute;
-    width: 70%;
-    right: 0;
-    height: inherit;
-}
-
-.container {
-    height: 1500px;
 }
 
 .leftcontent ul li,
@@ -103,8 +97,11 @@ html {
     letter-spacing: 1px;
 }
 
-.leftcontent ul li a {
-    text-decoration: none;
+.right {
+    position: absolute;
+    width: 70%;
+    right: 0;
+    height: inherit;
 }
 
 .namesection,
@@ -113,6 +110,17 @@ html {
     margin: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.rightcontent {
+    color: #616D79;
+}
+
+.rightcontent h4 {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px 0 10px 0px;
 }
 
 .namesection h1,
@@ -147,4 +155,53 @@ html {
     margin: 50px;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.projects {
+    background-color: #DFDFDF;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.title,
+.description,
+.teamsize,
+.devtool {
+    margin: 10px 0 10px 0;
+}
+
+.title::before {
+    content: 'title :';
+    text-transform: capitalize;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.description::before {
+    content: 'description :';
+    text-transform: capitalize;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.devtool::before {
+    content: 'Developer Tools :';
+    text-transform: capitalize;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.teamsize::before {
+    content: 'Team Size :';
+    text-transform: capitalize;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.link{
+    color: #616D79;
 }
